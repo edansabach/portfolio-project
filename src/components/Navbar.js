@@ -6,7 +6,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container">
+      <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img className="logo" src={logo} alt="logo" />
         </a>
@@ -23,7 +23,7 @@ const Navbar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto mx-md-auto pt-3 pt-md-0">
+          <ul className="navbar-nav pt-3 pt-md-0">
             <li className="nav-item active">
               <a className="nav-link" href="#">
                 Home <span className="sr-only"></span>

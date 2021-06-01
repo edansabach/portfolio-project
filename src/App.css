@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
 :root {
   --primary-blue: #61dafb;
+  --primary-white: #fff;
+  font-family: "Source Code Pro", monospace;
 }
 
 /* LOGO */
@@ -26,6 +30,15 @@
 
 /* NAVBAR */
 
+nav {
+  z-index: 2;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center;
+  padding-right: 4rem;
+}
+
 nav a.nav-link {
   cursor: pointer;
 }
@@ -42,4 +55,45 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-blue);
+}
+
+/* HEADER */
+
+.header-wrapper {
+  position: relative;
+  background: url(react-background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Source Code Pro", monospace !important;
+  color: var(--primary-white);
+  padding-top: 8rem;
+  font-size: 2rem;
+}
+
+.main-info h1 {
+  font-size: 4.5rem;
+  letter-spacing: 0rem;
+}
+
+.Typewriter__wrapper {
+  font-size: 2rem;
+  color: var(--primary-blue);
+}
+
+/* PARTICLES */
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
 }
