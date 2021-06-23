@@ -1,10 +1,15 @@
 import React from "react";
 import TypeWriter from "typewriter-effect";
 import Particles from "react-particles-js";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className="header-wrapper">
+    <motion.div
+      className="header-wrapper"
+      initial={{ opacity: 0.5 }}
+      animate={{ opacity: 1 }}
+    >
       <Particles
         params={{
           particles: {
@@ -26,16 +31,29 @@ const Header = () => {
         }}
       />
       <div className="main-info">
-        <h1 className="my-name">Edan Sabach</h1>
-        <TypeWriter
-          options={{
-            strings: ["Developer", "Designer", "Thinker", "Problem Solver"],
-            autoStart: true,
-            loop: true,
-          }}
-        />
+        <motion.h1
+          className="my-name"
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 1 }}
+        >
+          Edan Sabach
+        </motion.h1>
+        <motion.div
+          initial={{ opacity: 0, x: -250 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.5, duration: 1 }}
+        >
+          <TypeWriter
+            options={{
+              strings: ["Developer", "Designer", "Thinker", "Problem Solver"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
