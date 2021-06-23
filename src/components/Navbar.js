@@ -36,19 +36,19 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="">
+              <Link className="nav-link" to="/">
                 My Stack
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="">
+              <Link className="nav-link" to="/">
                 My Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="">
+              <Link className="nav-link" to="/">
                 Contact Me
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
