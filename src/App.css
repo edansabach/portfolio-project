@@ -9,7 +9,7 @@
 /* LOGO */
 
 .logo {
-  height: 8vmin;
+  height: 7vmin;
   pointer-events: none;
 }
 
@@ -36,11 +36,13 @@ nav {
 
 .navbar-expand-lg .navbar-collapse {
   justify-content: center;
-  padding-right: 4rem;
+  padding-right: 4.2rem;
 }
 
 nav a.nav-link {
   cursor: pointer;
+  letter-spacing: 0.055rem;
+  color: #fff !important;
 }
 
 nav ul li {
@@ -64,7 +66,7 @@ nav ul li {
   background: url(react-background.png) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 89vh;
+  height: 91vh;
 }
 
 .main-info {
@@ -75,7 +77,7 @@ nav ul li {
   text-align: center;
   font-family: "Source Code Pro", monospace !important;
   color: var(--primary-white);
-  padding-top: 8rem;
+  padding-top: 9rem;
   font-size: 2rem;
 }
 
@@ -93,9 +95,29 @@ nav ul li {
 
 .tsparticles-canvas-el {
   position: absolute;
-  height: 100vh;
+  height: 91vh;
   width: 100vw;
   z-index: 1;
 }
 
 /* ABOUT  */
+.about-background {
+  background: #1b1b1b;
+  height: 90vh;
+}
+
+.about-background h1 {
+  color: #c9c9c9;
+}
+
+.about-background p {
+  color: #c9c9c9;
+}
+
+.about-section {
+  max-width: 900px;
+}
+
+.about-details {
+  line-height: 1.95rem;
+}
