@@ -8,7 +8,7 @@ const About = () => {
     <motion.section
       initial={{ opacity: 1, x: 2000 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.75 }}
     >
       <section className="about-background">
         <div className="container-fluid about-section">
@@ -30,15 +30,18 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="row fixed-bottom">
-          <button className="btn btn-primary">
-            <FontAwesomeIcon icon={faGithub} style={{ fontSize: 25 }} />
-          </button>
-          <button className="btn btn-success">
-            <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: 25 }} />
-          </button>
-          <button className="btn btn-secondary">Twitch.tv/yone-1-trick</button>
-          <button className="btn btn-info">Celsius Chug</button>
+        <div className="row text-center mx-5">
+          <div>
+            <FontAwesomeIcon
+              icon={faGithub}
+              style={{ fontSize: 35, color: "#fff" }}
+            />
+            <span className="px-3"></span>
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              style={{ fontSize: 35, color: "#fff" }}
+            />
+          </div>
         </div>
       </section>
     </motion.section>
